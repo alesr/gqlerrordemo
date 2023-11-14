@@ -1,0 +1,18 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Foo {
+    id: String!
+}
+
+
+type Query {
+    getFoo(id: String!): Foo
+}
+
+type Mutation {
+    createFoo(id: String!): Foo
+}
+
